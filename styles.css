@@ -417,3 +417,14 @@ nav {
 .values__info--box-title {
     padding-left: 8px;
 }
+
+.values__info--button {
+    margin-left: 8px;
+    margin-top: 32px;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 24px;
+    background-color: rgba(100,21,255);
+}
