@@ -57,9 +57,25 @@ button {
     animation: slide-right 650ms ease 100ms backwards;
 }
 
+#features {
+    animation: slide-left 650ms ease 100ms backwards;
+}
+
 @keyframes slide-right {
     0% {
         transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-left {
+    0% {
+        transform: translateX(100%);
         opacity: 0;
     }
 
@@ -337,4 +353,67 @@ nav {
 .get__started--setp-info-title {
     font-size: 20px;
     margin-bottom: 12px;
+}
+
+/* Values */
+
+#values {
+    margin-bottom: 250px;
+}
+
+.values--wrapper {
+    display: flex;
+}
+
+.values__info {
+    width: 50%;
+}
+
+.values__info--top {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.values__info--title {
+    font-size: 48px;
+    margin-bottom: 24px;
+}
+
+.values__info--para {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.values--img-wrapper {
+    width: 50%;
+}
+
+.values--img {
+    width: 100%;
+}
+
+.values__info--boxes {
+    display: flex;
+    margin-top: 48px;
+}
+
+.values__info--box {
+    margin: 0 12px;
+    width: 50%;
+}
+
+.values__info--box-img-title {
+    display: flex;
+}
+
+.values__info--box-img {
+    background-color: darkgreen;
+    color: whitesmoke;
+    padding: 12px 12px;
+    border-radius: 50%;
+    transform: translateY(-15%);
+}
+
+.values__info--box-title {
+    padding-left: 8px;
 }
